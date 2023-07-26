@@ -20,11 +20,11 @@ const QuizCard = (props) => {
 
   const getAnswerClass = (option) => {
     if (showAnswer) {
-      if (option === selectedOption && option === props.opt4) {
+      if (option === selectedOption && option === props.correctOpt) {
         return 'bg-green-500 text-white';
-      } else if (option === selectedOption && option !== props.opt4) {
+      } else if (option === selectedOption && option !== props.correctOpt) {
         return 'bg-red-500 text-white';
-      } else if (option === props.opt4) {
+      } else if (option === props.correctOpt) {
         return 'bg-green-500 text-white';
       }
     } else if (option === selectedOption) {
